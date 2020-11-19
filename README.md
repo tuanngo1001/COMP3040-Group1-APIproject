@@ -36,5 +36,14 @@ http://www.our_uofm_resource/get_course/json?order=0
 
 ```markdown
 {
+	"results":
+		{
+			"professor": Roger Snack, 
+			"Overall Rating": B
+			"top_rated_courses": ["COMP3430","COMP3330"],
+			"bottom_rated_courses": ["COMP3130","COMP3030"]
+		},
+	"status": "OK"
+}
 
 ```
