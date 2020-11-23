@@ -66,7 +66,7 @@ https://api.uofm-ratings.ca/get-all-profs/json?order=0
 
 ```
 
-4. Response example for `https://api.uofm-ratings.ca/get-all-profs/json?order=0`
+4. Response example for `https://api.uofm-ratings.ca/get-all-profs/json?order=1`
 ```markdown
 {
 	"results":
