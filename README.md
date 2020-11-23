@@ -63,3 +63,18 @@ http://www.our_uofm_resource/get_course/json?order=0
     "status" : "OK"
   }
 ```
+- **get_rating:**
+```JSON
+  {
+    "results":
+      [
+        { "Professor" : "James Xidos", "avg_rating" : "A" },
+        { "Professor" : "Mike Zwapp",  "avg_rating" : "A" },
+        { "Professor" : "Rob Kovitz",  "avg_rating" : "A" },
+        { "Professor" : "Karen Sera",  "avg_rating" : "A" },
+        { "Professor" : "Mike Shaw",   "avg_rating" : "A" },
+      ],
+    "status" : "OK"
+  }
+```
+
