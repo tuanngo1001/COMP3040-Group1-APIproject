@@ -3,14 +3,14 @@
 Theme:
 
 - profs in the university
-  - prof → courses they teach
-    - return professor rating on rate my prof
+    - prof → courses they teach
+        - return professor rating on rate my prof
 
 # Parameters
 
 - **firstName** (string): professors first name
 - **lastName** (string): professors last name
-- **order** (int): 0 for asc 1 for desc
+- **order** (int): 0 for asc  1 for desc
 
 # 3 end points
 
@@ -22,52 +22,28 @@ Theme:
 
 `www.our_uofm_resource/get_all_profs` - chose an order
 
-### Sample requests
+### sample requests
 
-```
+```markdown
+
 http://www.our_uofm_resource/get_profs/json?firstName=Roger&lastName=Snack
 http://www.our_uofm_resource/get_rated/json?order=0
-http://www.our_uofm_resource/get_course/json?order=top&limit=5
-http://www.our_uofm_resource/get_all_profs/json?
-```
-
-### Responses
-
-- **get_prof:**
-```JSON
-  {
-    "results":
-      {
-        "professor" : "Roger Snack",
-        "Overall Rating": "B",
-        "top_rated_courses" : ["COMP3430","COMP3330"],
-        "bottom_rated_courses" : ["COMP3130","COMP3030"]
-      },
-    "status" : "OK"
-  }
-```
-
-- **get_rated:**
-```JSON
+http://www.our_uofm_resource/get_course/json?order=0
 
 ```
 
-- **get_course:**
-```JSON
-  {
-    "results":
-      [
-        { "courseId" : "COMP1010", "avg_rating" : "A" },
-        { "courseId" : "COMP2150", "avg_rating" : "A" },
-        { "courseId" : "COMP3040", "avg_rating" : "A" },
-        { "courseId" : "COMP3380", "avg_rating" : "B" },
-        { "courseId" : "COMP4710", "avg_rating" : "B" },
-      ],
-    "status" : "OK"
-  }
-```
+### response
 
-- **get_all_profs:**
-```JSON
+```markdown
+{
+	"results":
+		{
+			"professor": Roger Snack, 
+			"Overall Rating": B
+			"top_rated_courses": ["COMP3430","COMP3330"],
+			"bottom_rated_courses": ["COMP3130","COMP3030"]
+		},
+	"status": "OK"
+}
 
 ```
