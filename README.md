@@ -43,7 +43,7 @@ https://api.uofm-ratings.ca/get-all-profs/json?order=0
 }
 
 ```
-2. Response example for `https://api.uofm-ratings.ca/get-rated/json?order=0`
+2. Response example for `https://api.uofm-ratings.ca/get-course/json?order=0`
 ```markdown
 {
 	"results":
@@ -54,7 +54,7 @@ https://api.uofm-ratings.ca/get-all-profs/json?order=0
 }
 
 ```
-3. Response example for `https://api.uofm-ratings.ca/get-course/json?order=1`
+3. Response example for `https://api.uofm-ratings.ca/get-rated/json?order=1`
 ```markdown
   {
     "results":
