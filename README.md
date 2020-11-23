@@ -47,3 +47,19 @@ http://www.our_uofm_resource/get_course/json?order=0
 }
 
 ```
+
+
+- **get_course:**
+```JSON
+  {
+    "results":
+      [
+        { "courseId" : "COMP1010", "avg_rating" : "A" },
+        { "courseId" : "COMP2150", "avg_rating" : "A" },
+        { "courseId" : "COMP3040", "avg_rating" : "A" },
+        { "courseId" : "COMP3380", "avg_rating" : "B" },
+        { "courseId" : "COMP4710", "avg_rating" : "B" },
+      ],
+    "status" : "OK"
+  }
+```
