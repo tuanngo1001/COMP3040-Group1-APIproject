@@ -8,9 +8,9 @@ Theme:
 
 # Parameters
 
-- **firstName** (string): professors first name
-- **lastName** (string): professors last name
-- **order** (int): 0 for asc  1 for desc
+- **firstName** (string): professors first name. Optional 
+- **lastName** (string): professors last name. Optional 
+- **order** (int): 0 for asc  1 for desc. Optional
 
 # 3 end points
 
