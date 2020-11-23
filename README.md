@@ -56,14 +56,32 @@ https://api.uofm-ratings.ca/get-all-profs/json?order=0
 ```
 3. Response example for `https://api.uofm-ratings.ca/get-course/json?order=1`
 ```markdown
-{
-	"results":
-		{
-			//TODO
-		},
-	"status": "OK"
-}
-
+  {
+    "results":
+      [
+        {
+		"Professor" : "James Xidos",
+	 	 "avg_rating" : "A" 
+	},
+        {
+		"Professor" : "Mike Zwapp",
+	 	 "avg_rating" : "A" 
+	},
+        {
+		"Professor" : "Rob Kovitz", 
+	  	"avg_rating" : "A" 
+	},
+        {
+		"Professor" : "Karen Sera",
+	  	"avg_rating" : "A" 
+	},
+        {
+		"Professor" : "Mike Shaw",  
+	  	"avg_rating" : "B+" 
+	},
+      ],
+    "status" : "OK"
+  }
 ```
 
 4. Response example for `https://api.uofm-ratings.ca/get-all-profs/json?order=0`
