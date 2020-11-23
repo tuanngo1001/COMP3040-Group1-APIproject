@@ -9,9 +9,9 @@ We provide a REST API that is very easy to use. All the requests are done using 
 
 ### Parameters
 
-- **firstName** (string): professor's first name
-- **lastName** (string): professor's last name
-- **order** (int): 0 for ascending order and 1 for descending order.
+- **firstName** (string): professor's first name. Optional
+- **lastName** (string): professor's last name. Optional
+- **order** (int): 0 for ascending order and 1 for descending order. Optional
 
 ### Sample requests
 
