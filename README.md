@@ -144,7 +144,7 @@ https://api.uofm-ratings.ca/get-all-profs/json?order=0
 				"lastName" : "Bernard",
 				"courses" : ["COMP1000","COMP2000"]	
 			}
-		]
+		],
 	"status": "OK"
 }
 
