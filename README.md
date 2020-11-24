@@ -34,8 +34,8 @@ https://api.uofm-ratings.ca/get-all-profs/json?order=0
 {
 	"results":
 		{
-			"professor": Roger Snack, 
-			"Overall Rating": B
+			"professor": "Roger Snack", 
+			"Overall Rating": "B",
 			"top_rated_courses": ["COMP3430","COMP3330"],
 			"bottom_rated_courses": ["COMP3130","COMP3030"]
 		},
@@ -117,7 +117,7 @@ https://api.uofm-ratings.ca/get-all-profs/json?order=0
 			{
 				"rating" : "A", 
 				"firstName" : "Dwight", 
-				"lastName" : "Schrute"
+				"lastName" : "Schrute",
 				"courses" : ["COMP2999","COMP3999"]	
 			},
 			{
@@ -129,7 +129,7 @@ https://api.uofm-ratings.ca/get-all-profs/json?order=0
 			{
 				"rating" : "B", 
 				"firstName" : "Pam", 
-				"lastName" : "Beesly"
+				"lastName" : "Beesly",
 				"courses" : ["COMP4000"]
 			},
 			{
