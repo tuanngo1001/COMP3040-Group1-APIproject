@@ -9,9 +9,9 @@ We provide a REST API that is very easy to use. All the requests are done using 
 
 ### Parameters
 
-- **firstName** (string): professor's first name
-- **lastName** (string): professor's last name
-- **order** (int): 0 for ascending order and 1 for descending order.
+- **firstName** (string): professor's first name. Optional
+- **lastName** (string): professor's last name. Optional
+- **order** (int): 0 for ascending order and 1 for descending order. Optional
 
 ### Sample requests
 
@@ -43,7 +43,7 @@ https://api.uofm-ratings.ca/get-all-profs/json?order=0
 }
 
 ```
-2. Response example for `https://api.uofm-ratings.ca/get-rated/json?order=0`
+2. Response example for `https://api.uofm-ratings.ca/get-course/json?order=0`
 ```markdown
 {
 	"results":
@@ -54,16 +54,34 @@ https://api.uofm-ratings.ca/get-all-profs/json?order=0
 }
 
 ```
-3. Response example for `https://api.uofm-ratings.ca/get-course/json?order=1`
+3. Response example for `https://api.uofm-ratings.ca/get-rated/json?order=1`
 ```markdown
-{
-	"results":
-		{
-			//TODO
-		},
-	"status": "OK"
-}
-
+  {
+    "results":
+      [
+        {
+		"Professor" : "James Xidos",
+	 	 "avg_rating" : "A" 
+	},
+        {
+		"Professor" : "Mike Zwapp",
+	 	 "avg_rating" : "A" 
+	},
+        {
+		"Professor" : "Rob Kovitz", 
+	  	"avg_rating" : "A" 
+	},
+        {
+		"Professor" : "Karen Sera",
+	  	"avg_rating" : "A" 
+	},
+        {
+		"Professor" : "Mike Shaw",  
+	  	"avg_rating" : "B+" 
+	},
+      ],
+    "status" : "OK"
+  }
 ```
 
 4. Response example for `https://api.uofm-ratings.ca/get-all-profs/json?order=0`
