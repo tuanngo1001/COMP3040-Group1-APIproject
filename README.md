@@ -55,15 +55,19 @@ https://api.uofm-ratings.ca/get-all-profs/json?order=0
 
 ```
 3. Response example for `https://api.uofm-ratings.ca/get-course/json?order=1`
-```markdown
-{
-	"results":
-		{
-			//TODO
-		},
-	"status": "OK"
-}
-
+```JSON
+  {
+    "results":
+      [
+        { "courseId" : "COMP1010", "avg_rating" : "A" },
+        { "courseId" : "COMP2150", "avg_rating" : "A" },
+        { "courseId" : "COMP3040", "avg_rating" : "A" },
+        { "courseId" : "COMP3380", "avg_rating" : "B" },
+        { "courseId" : "COMP4710", "avg_rating" : "B" },
+      ],
+    "status" : "OK"
+  }
+  
 ```
 
 4. Response example for `https://api.uofm-ratings.ca/get-all-profs/json?order=1`
