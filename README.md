@@ -30,7 +30,7 @@ https://api.uofm-ratings.ca/get-all-profs/json?order=0
 ### Response
 
 1. Response example for `https://api.uofm-ratings.ca/get-prof/json?firstName=Roger&lastName=Snack`
-```markdown
+```json
 {
 	"results":
 		{
@@ -44,52 +44,67 @@ https://api.uofm-ratings.ca/get-all-profs/json?order=0
 
 ```
 2. Response example for `https://api.uofm-ratings.ca/get-rated/json?order=0`
-```markdown
+```json
 {
-    "results":
-      [
-        {
-		"Professor" : "James Xidos",
-	 	 "avg_rating" : "A" 
-	},
-        {
-		"Professor" : "Mike Zwapp",
-	 	 "avg_rating" : "A" 
-	},
-        {
-		"Professor" : "Rob Kovitz", 
-	  	"avg_rating" : "A" 
-	},
-        {
-		"Professor" : "Karen Sera",
-	  	"avg_rating" : "A" 
-	},
-        {
-		"Professor" : "Mike Shaw",  
-	  	"avg_rating" : "B+" 
-	},
-      ],
-    "status" : "OK"
+    	"results":
+      		[
+        		{
+				"Professor" : "James Xidos",
+				"avg_rating" : "A" 
+			},
+        		{
+				"Professor" : "Mike Zwapp",
+				"avg_rating" : "A" 
+			},
+        		{
+				"Professor" : "Rob Kovitz", 
+				"avg_rating" : "A" 
+			},
+			{
+				"Professor" : "Karen Sera",
+				"avg_rating" : "A" 
+			},
+			{
+				"Professor" : "Mike Shaw",  
+				"avg_rating" : "B+" 
+			},
+	      ],
+    	"status" : "OK"
   }
 ```
 3. Response example for `https://api.uofm-ratings.ca/get-course/json?order=1`
 ```JSON
-  {
-    "results":
-      [
-        { "courseId" : "COMP1010", "avg_rating" : "A" },
-        { "courseId" : "COMP2150", "avg_rating" : "A" },
-        { "courseId" : "COMP3040", "avg_rating" : "A" },
-        { "courseId" : "COMP3380", "avg_rating" : "B" },
-        { "courseId" : "COMP4710", "avg_rating" : "B" },
-      ],
-    "status" : "OK"
-  }
+ {
+ 	"results":
+      		[
+        		{ 
+				"courseId" : "COMP1010",
+				"avg_rating" : "A" 
+			},
+			{ 
+				"courseId" : "COMP2150",
+				"avg_rating" : "A" 
+			},
+			{ 
+				"courseId" : "COMP3040",
+				"avg_rating" : "A"
+			},
+			{
+				"courseId" : "COMP3380",
+				"avg_rating" : "B" 
+			},
+			{ 
+				"courseId" : "COMP4710",
+				"avg_rating" : "B" 
+			},
+		],
+	"status" : "OK"
+}
   
 ```
 
 4. Response example for `https://api.uofm-ratings.ca/get-all-profs/json?order=1`
-```markdown
+```json
 {
 	"results":
 		[
